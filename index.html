@@ -8,98 +8,72 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-    <title>Document</title>
+    <title>Crystal Collerctor</title>
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-4">
-            <h1 class="display-4">Crystal Collector</h1>
-        </div>
-    </div>
-    </div>
-    <div class="row1">
-        <div class="col-6">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking you will add a specific amount of points to your score.</p>
-            <p>You win the game by matching your total score to the rand number.</p>
-            <p>You lose the game if your total score goesabove the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game starts, the game will change valuees of each crystal.</p>
-        </div>
+    <div class="container">
+        <h1>Crystal Collector</h1>
 
+        <p class="content">
 
+            <p>How to play .....</p>
+            <p> At the beginning of the game a random number will be given. </p>
+            <p>Each one of the four crystals at the bottom have a random value, by clicking on the crystals you will
+                add specific number to your total score.</p>
+            <p>The value of crystals will be hidden hidden until it has been clicked.</p>
+            <p> You win the game by matching your score to the random number, you lose if you exceed the random
+                number.</p>
 
-        <!-- create divs for total, current score, randomnumber -->
-        <div class="row">
-            <div class="col-3">
-                <div id="randomNum">
-                </div>
-            </div>
-            <div id="wins-losses">
-                <div id=col-3>
-                    <p class="wins"></p>
-                    <p>Wins</p>
-                </div>
-                <div id="col-3">
-                    <p class="losses"></p>
-                    <p>losses</p>
-                </div>
-            </div>
-            </div>
+            <p> In each new game, the random number and the value of the crystals is different.</p>
+    
 
+            <div id="randomNum">randomnumber</div>
 
-
-       
-
-
-
-
-
-
-
-
-
-        <div class="button-container">
-            <div class="row">
+            <div class="row images">
                 <div class="col-3">
-                    <button class="blue-button"><img src="assets/images/bluegem.png" alt="Snow"
+                    <button class="blue-button"><img src="assets/images/done.png" alt="ruby"
                             style="width:100%"></button>
                 </div>
                 <div class="col-3">
-                    <button class="yellow-button"><img src="assets/images/yellowgem.png" alt="Snow"
+                    <button class="yellow-button"><img src="assets/images/dtwo.png" alt="diamond"
                             style="width:100%"></button>
                 </div>
                 <div class="col-3">
-                    <button class="gem-button"><img src="assets/images/gem.png" alt="Snow" style="width:100%"></button>
-                </div>
-                <div class="col-3">
-                    <button class="ruby-button"><img src="assets/images/ruby.png" alt="Snow"
+                    <button class="gem-button"><img src="assets/images/dthree.png" alt="ruby"
                             style="width:100%"></button>
                 </div>
+                <div class="col-3">
+                    <button class="ruby-button"><img src="assets/images/dfour.png" alt="gem"
+                            style="width:100%"></button>
+                </div>
+                <div class="row scores">
+                    <div class="col-4">
+                        <p id="totalScore"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="wins"></p>
+                    </div>
+                    <div class="col-4">
+                        <p class ="losses"></p>
+                    </div>
+                    <div class="row totals">
+                            <div class="col-4">
+                                <p>Total Score</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Wins</p>
+                            </div>
+                            <div class="col-4">
+                             <p>Losses</p>
+                            </div>
+                </div>
 
-            </div>
-        </div>
-        <!-- create divs for total, current score, randomnumber -->
 
 
-        <div class="row">
-            <div id="placeholder">Your total score is :</div>
-        </div>
-
-        <div class="row">
-            <div id="totalScore">
-                <p></p>
-            </div>
-        </div>
-
-
-
-
-
-
-        <script src="assets/javascript/game.js"></script>
+                <script src="assets/javascript/game.js"></script>
 
 </body>
 
